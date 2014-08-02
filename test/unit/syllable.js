@@ -21,4 +21,3 @@ test("complex matching", function() {
 	assert(omnipotency.matches(light));
 	assert(!(omnipotency.matches(sol)));
 });
-

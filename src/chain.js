@@ -1,22 +1,22 @@
 (function(Onsetsu, undefined){
-	Onsetsu.ChainExecuter = function()
+	Onsetsu.Chain = function()
 	{
 		this.spells = [];
 	};
 	
-	Onsetsu.ChainExecuter.prototype.execute = function()
+	Onsetsu.Chain.prototype.execute = function()
 	{
 		_.each(this.spells, function(spell) {
 			spell.execute();
 		});
 	};
 
-	Onsetsu.ChainExecuter.prototype.add = function(spell)
+	Onsetsu.Chain.prototype.add = function(spell)
 	{
 		this.spells.push(spell);
 	};
 	
-	Onsetsu.ChainExecuter.prototype.get = function()
+	Onsetsu.Chain.prototype.get = function()
 	{
 		return this.spells;
 	};
