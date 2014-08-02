@@ -1,5 +1,5 @@
 test("add spell", function() {
-	var chain = new Onsetsu.ChainExecuter();
+	var chain = new Onsetsu.Chain();
 	chain.add("spell1");
 	chain.add("spell2");
 	
@@ -14,7 +14,7 @@ test("execute spells", function() {
 		spell1 = new Onsetsu.Spell("spell1", [], function() { executed.push("spell1"); }),
 		spell2 = new Onsetsu.Spell("spell2", [], function() { executed.push("spell2"); }),
 		spell3 = new Onsetsu.Spell("spell3", [], function() { executed.push("spell3"); }),
-		chain = new Onsetsu.ChainExecuter();
+		chain = new Onsetsu.Chain();
 	
 	chain.add(spell1);
 	chain.add(spell2);
