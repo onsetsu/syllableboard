@@ -31,3 +31,17 @@ test("get syllables", function() {
 	assert(fireball.getSyllables() === syllables);
 });
 
+test("execute", function() {
+	var count = 0,
+		syllables = [Onsetsu.Syllable.getFire(),
+                     Onsetsu.Syllable.getChi(),
+                     Onsetsu.Syllable.getNif()
+                     ];
+	var fireball = new Onsetsu.Spell("fireball", syllables, function() {
+		count++;
+		return 42;
+	});
+
+	assert(fireball.execute() === 42);
+	assert(count === 1);
+});
