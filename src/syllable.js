@@ -82,4 +82,8 @@
 		return new Onsetsu.Syllable(["ex"]);
 	};
 	
+	// representing empty field
+	Onsetsu.Syllable.getEmpty = function() {
+		return new Onsetsu.Syllable(["empty"]);
+	};
 })(Onsetsu);
