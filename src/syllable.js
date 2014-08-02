@@ -35,7 +35,15 @@
         return new Onsetsu.Syllable(['shadow', 'luna']);
     };
     Onsetsu.Syllable.getOmnipotency = function() {
-        return new Onsetsu.Syllable(['fire', 'water', 'earth', 'wind', 'light', 'shadow']);
+        var elements = ['fire',
+                        'water',
+                        'earth',
+                        'wind',
+                        'light',
+                        'shadow',
+                        'omnipotency'
+                        ];
+        return new Onsetsu.Syllable(elements);
     };
 
     // 1 sp syllables
