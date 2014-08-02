@@ -1,4 +1,4 @@
-test("get syllables", function() {
+test("get syllable", function() {
 	Onsetsu.Syllable.getPai();
 });
 
